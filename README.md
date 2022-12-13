@@ -4,7 +4,7 @@
 
 [Vyom Pathak](https://www.linkedin.com/in/01-vyom/)<sup>1</sup> | [Amogh Mannekote](http://learndialogue.org/person.php?id=amannekote)<sup>1</sup> | [Oluwapemisin Bandy-toyo](https://github.com/pempem12)<sup>1</sup>
 
-[University of Florida](https://www.cise.ufl.edu/)<sup>1</sup>
+[Computer & Information Science & Engineering, University of Florida, Gainesville, Florida, USA](https://www.cise.ufl.edu/)<sup>1</sup>
 
 Designing task-oriented dialogue systems manually has been at the forefront of developing very important systems in the research community. However, when learning NLU and dialogue management from corpora using machine learning algorithms, the tight coupling between the specific task and the general skills precludes the transferability of the learned models to similar, related domains and tasks. With zero-shot learning of dialogue management, the designer of the dialogue agent would not need to spend a lot of time collecting or writing examples for conversations. Instead, he/she can simply exploit the learned behaviors from the related tasks/domains, and would simply have to specify the schema for the new domain/task. Hence, we propose a Schema-based dialogue system for zero-shot task transfer for the NLU unit. For the response generation part, we used zero-shot prompt based Dialogue-GPT2. We performed two user studies to verify the viability of the system.
 
