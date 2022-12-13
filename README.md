@@ -9,6 +9,44 @@
 Designing task-oriented dialogue systems manually has been at the forefront of developing very important systems in the research community. However, when learning NLU and dialogue management from corpora using machine learning algorithms, the tight coupling between the specific task and the general skills precludes the transferability of the learned models to similar, related domains and tasks. With zero-shot learning of dialogue management, the designer of the dialogue agent would not need to spend a lot of time collecting or writing examples for conversations. Instead, he/she can simply exploit the learned behaviors from the related tasks/domains, and would simply have to specify the schema for the new domain/task. Hence, we propose a Schema-based dialogue system for zero-shot task transfer for the NLU unit. For the response generation part, we used zero-shot prompt based Dialogue-GPT2. We performed two user studies to verify the viability of the system.
 
 Please go through the report for more details about the project.
+
+## Setup
+
+### System & Requirements
+
+- Linux OS
+- Python-3.6
+- TensorFlow-2.2.0
+
+### Setting up repository
+
+  ```shell
+  git clone https://github.com/01-vyom/Zero_Shot_Schema_based_Dialogue_System
+  python -m venv nn_iop_env
+  source $PWD/sgd_gpt2/bin/activate
+  ```
+
+### Installing Dependencies
+
+* Change directory to the root of the repository. 
+* Follow setup instructions as shown in the [original repository](https://github.com/Shikib/schema_attention_model) for installing dependencies. 
+* Download the model checkpoints into the `sam_task_transfer` directory which excludes a task if you are choosing a pre-defined domain, or download all domain trained model for new task interaction.
+
+## Running Code
+
+Change directory to the root of the repository.
+
+### Inferencing
+
+To perform inference on the trained model, run the following command:
+
+```shell
+python ./app.py
+```
+
+* One can define a new task and add it to the `./STAR/tasks/` directory, and also add a sample example values in `./STAR/apis/apis/`. Change the task name for variable `TASK` in the `app.py` file.
+* Following to adding a new task, define new domain and add it to the `./STAR/apis/dbs/` directory. Change the domain name for variable `DOMAIN` in the `app.py` file.
+
 ## Acknowledgement
 The core part of the project is based on paper titled "Schema-Guided Paradigm for Zero-Shot Dialog"
 <details>
@@ -78,5 +116,10 @@ The majority of this code is adapted from the work of Mosig et al. Furthermore, 
 
 If you have any questions about this code or the paper, please reach out to `amehri@cs.cmu.edu`.
 </details>
+
+
+## Contact
+
+If you have any questions about this code or the paper, please reach out to `v.pathak@ufl.edu`.
 
 Licensed under the [MIT License](LICENSE.md).
