@@ -1,3 +1,19 @@
+# Zero Shot Schema Guided Dialog System for Task Oriented Systems with GPT-2 based responses
+
+### [[Report]](./document/Project%20Final%20Report.pdf) | [[Slides]](./document/Zero_Shot_Bot.pdf)
+
+[Vyom Pathak](https://www.linkedin.com/in/01-vyom/)<sup>1</sup> | [Amogh Mannekote](http://learndialogue.org/person.php?id=amannekote)<sup>1</sup> | [Oluwapemisin Bandy-toyo](https://github.com/pempem12)<sup>1</sup>
+
+[University of Florida](https://www.cise.ufl.edu/)<sup>1</sup>
+
+Designing task-oriented dialogue systems manually has been at the forefront of developing very important systems in the research community. However, when learning NLU and dialogue management from corpora using machine learning algorithms, the tight coupling between the specific task and the general skills precludes the transferability of the learned models to similar, related domains and tasks. With zero-shot learning of dialogue management, the designer of the dialogue agent would not need to spend a lot of time collecting or writing examples for conversations. Instead, he/she can simply exploit the learned behaviors from the related tasks/domains, and would simply have to specify the schema for the new domain/task. Hence, we propose a Schema-based dialogue system for zero-shot task transfer for the NLU unit. For the response generation part, we used zero-shot prompt based Dialogue-GPT2. We performed two user studies to verify the viability of the system.
+
+Please go through the report for more details about the project.
+## Acknowledgement
+The core part of the project is based on paper titled "Schema-Guided Paradigm for Zero-Shot Dialog"
+<details>
+<summary>More Details</summary>
+
 # Schema-Guided Paradigm for Zero-Shot Dialog
 
 This is the code for _Schema-Guided Paradigm for Zero-Shot Dialog_ to be published at SIGdial 2021 (paper coming soon).
@@ -61,3 +77,6 @@ The majority of this code is adapted from the work of Mosig et al. Furthermore, 
 ## Contact
 
 If you have any questions about this code or the paper, please reach out to `amehri@cs.cmu.edu`.
+</details>
+
+Licensed under the [MIT License](LICENSE.md).
